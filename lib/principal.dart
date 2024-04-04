@@ -28,21 +28,3 @@ class principal extends StatelessWidget {
     );
   }
 }
-Widget build(BuildContext context) {
-  return Scaffold(
-    appBar: AppBar(
-    ),
-    body: Center(
-      child: ElevatedButton(
-        child: const Text('Produto'),
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const produto()),
-          );
-        },
-      ),
-
-    ),
-  );
-}
