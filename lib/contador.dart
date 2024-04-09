@@ -16,21 +16,21 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurpleAccent),
         useMaterial3: true,
       ),
-      home: const contador(title: 'Botão'),
+      home: const Contador(title: 'Botão'),
     );
   }
 }
 
-class contador extends StatefulWidget {
-  const contador({super.key, required this.title});
+class Contador extends StatefulWidget {
+  const Contador({super.key, required this.title});
 
   final String title;
 
   @override
-  State<contador> createState() => _MyHomePageState();
+  State<Contador> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<contador> {
+class _MyHomePageState extends State<Contador> {
   int _counter = 0;
 
   _incrementCounter() {
