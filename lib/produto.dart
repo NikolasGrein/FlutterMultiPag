@@ -13,19 +13,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const produto(),
+      home: const Produto(),
     );
   }
 }
 
-class produto extends StatefulWidget {
-  const produto({super.key});
+class Produto extends StatefulWidget {
+  const Produto({super.key});
 
   @override
-  State<produto> createState() => _HomePageState();
+  State<Produto> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<produto> {
+class _HomePageState extends State<Produto> {
   TextEditingController idController = new TextEditingController();
   TextEditingController nomeController = new TextEditingController();
   TextEditingController descricaoController = new TextEditingController();
