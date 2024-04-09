@@ -13,19 +13,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const imc(),
+      home: const Imc(),
     );
   }
 }
 
-class imc extends StatefulWidget {
-  const imc({super.key});
+class Imc extends StatefulWidget {
+  const Imc({super.key});
 
   @override
-  State<imc> createState() => _HomePageState();
+  State<Imc> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<imc> {
+class _HomePageState extends State<Imc> {
   TextEditingController pesoController = new TextEditingController();
   TextEditingController alturaController = new TextEditingController();
   String _textoInfo = "Informe seus dados:";
