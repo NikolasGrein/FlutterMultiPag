@@ -13,19 +13,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Home(),
+      home: const CadastroUser(),
     );
   }
 }
 
-class Home extends StatefulWidget {
-  const Home({super.key});
+class CadastroUser extends StatefulWidget {
+  const CadastroUser({super.key});
 
   @override
-  State<Home> createState() => _HomePageState();
+  State<CadastroUser> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<Home> {
+class _HomePageState extends State<CadastroUser> {
   TextEditingController usuarioController = new TextEditingController();
   TextEditingController senhaController = new TextEditingController();
   String _textoInfo = "Informe seus dados:";
